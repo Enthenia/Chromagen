@@ -1,97 +1,175 @@
-*{
-margin: 0;
-padding: 0;
+/*houdini*/
+@property --blink-opacity{
+	syntax: "<number>";
+	inherits: false;
+	initial-value: 1;}
+
+/*fallback @keyframes blink-animation {
+	0%,
+	100% {
+	opacity: 1;}
+	50% {
+	opacity: 0;} }*/
+
+@keyframes blink-animation {
+	0%,
+	100% { 
+	opacity: var(--blink-opacity, 1);}
+	50% { 
+	opacity: 0;}
 }
+
+/*houdini*/
+
+/*base*/
+	:root {
+	font-family: Inter sans-serif;
+
+	--stripe-color: #fff;
+	--bg: var(--stripe--color);
+	--maincolor: var(--bg);}
+
 body {
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode' , Geneva, Verdana;
-}
-.navbar {
+	width: 100cqw;
+	min-height: 100cqh:
 	display: flex;
-	position: sticky;
-	align-items: center;
-	justify-content: space-between;
-	top: 0px;
-	background: #cfcfc4;
-	background-blend-mode: darken;
-	background-size: cover;
-	color: white; 
-	padding: 10px 20 px;
+	place-content: center;
+	place-items: flex-start center;
+	background: var(--bg);}
+
+/*custom*/
+
+@keyframes smoothBg{
+	from {
+	background-position: 50% 50%, 50% 50%;}
+	to {
+	background-position: 350% 50%, 350% 50%;} 
 }
-.nav-list { 
+
+.wrapper {
+	width: 100%;
+	height: auto;
+	position: relative;}
+
+.Chromagen {
+	width: 100%;
+	height: 100%;
+	min-height: 100vh;
+	position: relative;
 	display: flex;
-	list-style: none;
-	}
-.nav-list li {
-	margin-right: 20px;
+	place-content: center;
+	place-items: center;
+	--stripes: repeating-linear-gradient( 100deg,
+	var(---stripe-color) 0%,
+	var(--stripe-color) 7%,
+	transparent 10%,
+	transparent 12%,
+	var(--stripe-color) 16%);
+
+	--rainbow: repeating-linear-graedient( 100deg,
+	#60a5fa 10%,
+	#e879f9 15%,
+	#60a5fa 20%,
+	#5eead4 25%,
+	#60a5fa 30%);
+	background-image: var(--stripes), var(--rainbow);
+	background-size: 300%, 200%;
+	background-position: 50% 50%, 50% 50%;
+
+	filter: blur(10px) intert(100%);
+
+	mask-image: radialgradient(elllipse at 100% 0%, black 40%, transparent 70%);
+	&::after{
+	content: "";
+	position: absolute;
+	inset: 0;
+	background-image: var(--stripes), var(--rainbow);
+	background-size: 200%, 100$;
+	animation: smoothBG 60s linear infinite;
+	background-attachment: fixed;
+	mix-blend-mode: difference;}
 }
-.nav-list li:last-child {
-	margin-right: 0;
-}
-.nav-list li a{
-	text-decoration: none;
-	color: white;
-	font-size: 18px;
-	transition: color 0.3s ease-in-out;
-}
-.nav-list li a:hover {
-	color: #738276;
-/*Change the color on hover */
-}
-.rightNav {
-	text-align: right;
-}
-#search {
-	padding: 8px;
-	font-size: 16px;
-	border: 2px solid #fff;
-	border-radius: 5px;
-}
-.btn {
-	background-color: #b768a2;
-	color: #000;
-	border: none;
-	padding: 8px 12px;
-	border-radius: 5px;
+
+:has(:checked) {
+	--stripe-color: #000;}
+:has(:checked) .Chromagen,
+:has(:checked) .Chromagen::after { filter: blur(10px) opacity(50%) saturate(200%)}
+
+.content {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%,
+	display: flex;
+	place-content: center;
+	place-items: center;
+	flex-flow: column;
+	gap: 4.5%;
+	text-align: center;
+	mix-blend-mode: difference;
+	-webbkit-mixblend-mode: difference;
+	filter: invert(1);}
+
+.h1--scalingSize {
+	font-size: calc(1rem - -5vw);
+	position: relative;}
+
+#switch {
+	appearance: none;
+	-webkit-appearanceL none;
+	opacity: 0;}
+
+[for="switch"] {
 	cursor: pointer;
-	transition: background-color 0.3s ease-in-out;
-}
-.btn:hover {
-	background-color: #000;
-/*Change background colof on hover*/
-	color: #b768a2}
+	transition: 0.15s linear(0 0%, 0.16 16.85%, 0.32 31.73%, 1 100%);
+	will-change: transform, font-weight;
+	padding: 0.5rem;}
 
-section{
-	height: 100vh;
-	border: 1px solid silver;
-	display: flex;
-	justify-content: center;
-	align-items: center;	
+[for="switch"]:where(:hover, :active, :focus-within) {
+/*transform: scale(1.2);
+	font-weight: 900;*/
+	transition: 0.3s ease;
+	animation: animSwitch 0.2s alternate;
+	& .icon {
+	animation-play-state: paused; }
+}
+@keyframes animSwitch {
+	50% {
+	transform: scale(1.2);
+	font-weight: 900;}
+}
+
+/*icon houdini*/
+.icon {
+	width: 1lh;
+	height: 1lh;
+	aspect-ratio: 1/1;
+	padding: 0.25em 0.35rem;
+	border-radius: calc(1px / 0);
+	birder: 1px dashed;
+	---blink-opacity: 1;
+	animation: blink-animation 2s ease-in-out infinite running}
 	
-}
-.Container img{
-	height: 200px;
-	border-radius: 40%;
-	background-color:#b768a2
-}
-.container h2{
-	margin-top: 3%;
-	font-size: 3em
-	font-family; 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode' , Geneva, Verdana;
-	background-color: #bfc1c2;
-	text-align: center;
-}
+/*challenge*/
+.h1--scalingSize::before {
+	content: attr(data-text);
+	position: absolute;
+	inset: 0;
+	background: white;
+	text-shadow: 0 0 1px #ffffff;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-color: white;
+	-webkit-mask: linear-gradient(#000 0 0 )
+	luminance;
+	mask: linear-gradient(#000 0 0)
+	luminance, alpha;
+	backdrop-filter: blur(19px) brightness(12.5);
+	-webkit-text-stroke: 1px white;
+	display: flex;
+	margin: auto;
+	z-index: 1;
+	pointer-events: none;}
 
-.container p, ul{
-	margin-top: 2%;
-	font-size: 1.5em;
-	list-style-type: square;
-	background-color: #bfc1c2;
-	text-align: center;
-}
+	
 
-footer {
-line-height: 40px; 
-display: flex;
-justify-content: center;
-font-size: 1em;
-}

@@ -2,8 +2,7 @@
 	margin: 0;
 	padding: 0;
 	}
-	body {font-family: gill sans, sans-serif;}
-		
+	body {font-family: gill sans, sans-serif; font-weight: lighter; color:antiquewhite;}
 	.navbar {
 		display: flex;
 		position: sticky;
@@ -74,8 +73,8 @@
 	}
 	.container h2{
 		margin-top: 3%;
-		font-size: 3em
-		font-family; 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode' , Geneva, Verdana;
+		font-size: 3em;
+		font-family; gill sans, sans-serif; font-weight: lighter; color:antiquewhite;;
 		background-color: #bfc1c2;
 		text-align: center;
 	}

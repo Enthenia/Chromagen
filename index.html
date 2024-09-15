@@ -2,73 +2,153 @@
 <html lang="en-US">
 <!-- Comments-->
 <!-- Sarah Arrington 
-	September 13, 2024 
+	September 15, 2024 
 	File: index.html 
 	Description: This is the main page. Other attributes will be added to it accordingly-->
 <head>
-	<title>Chromagen</title>
-	<link rel="shortcut icon" type="image/jpg"
-href="Enthenia/Images/ChromagenLogo.png">
-	<link rel="stylesheet" href="css/style.css">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<!-- Mobile Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<!-- Site Metas -->
 	<meta charset="utf-8">
 	<meta name="author" content="Chromagen Design">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="keywords" content="art, design, traditional media">
+	<title>Chromagen</title>
+	<link rel="shortcut icon" type="image/jpg"
+href="Images/ChromagenLogo.png" background:"screen">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/form.css">
 </head>
-<!--Top of page-->
-	<body style="margin:0;">
-		<section class='wrapper'>
-			<div class='Chromagen'>
+<!--Background-->
+	<body style="margin:0;">	
+		<div id="bg-wrap">
+			<svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
+			<defs>
+			<radialGradient id="Gradient1" cx="50%" cy="50%" fx="0.441602%" fy="50%" r=".5"><animate attributeName="fx" dur="34s" values="0%;3%;0%" repeatCount="indefinite"></animate><stop offset="0%" stop-color="rgba(255, 0, 255, 1)"></stop><stop offset="100%" stop-color="rgba(255, 0, 255, 0)"></stop></radialGradient>
+			<radialGradient id="Gradient2" cx="50%" cy="50%" fx="2.68147%" fy="50%" r=".5"><animate attributeName="fx" dur="23.5s" values="0%;3%;0%" repeatCount="indefinite"></animate><stop offset="0%" stop-color="rgba(255, 255, 0, 1)"></stop><stop offset="100%" stop-color="rgba(255, 255, 0, 0)"></stop></radialGradient>
+			<radialGradient id="Gradient3" cx="50%" cy="50%" fx="0.836536%" fy="50%" r=".5"><animate attributeName="fx" dur="21.5s" values="0%;3%;0%" repeatCount="indefinite"></animate><stop offset="0%" stop-color="rgba(0, 255, 255, 1)"></stop><stop offset="100%" stop-color="rgba(0, 255, 255, 0)"></stop></radialGradient>
+			<radialGradient id="Gradient4" cx="50%" cy="50%" fx="4.56417%" fy="50%" r=".5"><animate attributeName="fx" dur="23s" values="0%;5%;0%" repeatCount="indefinite"></animate><stop offset="0%" stop-color="rgba(0, 255, 0, 1)"></stop><stop offset="100%" stop-color="rgba(0, 255, 0, 0)"></stop></radialGradient>
+			<radialGradient id="Gradient5" cx="50%" cy="50%" fx="2.65405%" fy="50%" r=".5"><animate attributeName="fx" dur="24.5s" values="0%;5%;0%" repeatCount="indefinite"></animate><stop offset="0%" stop-color="rgba(0,0,255, 1)"></stop><stop offset="100%" stop-color="rgba(0,0,255, 0)"></stop></radialGradient>
+			<radialGradient id="Gradient6" cx="50%" cy="50%" fx="0.981338%" fy="50%" r=".5"><animate attributeName="fx" dur="25.5s" values="0%;5%;0%" repeatCount="indefinite"></animate><stop offset="0%" stop-color="rgba(255,0,0, 1)"></stop><stop offset="100%" stop-color="rgba(255,0,0, 0)"></stop></radialGradient>
+			</defs>
+			<!--<rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient4)">
+			<animate attributeName="x" dur="20s" values="25%;0%;25%" repeatCount="indefinite" />
+			<animate attributeName="y" dur="21s" values="0%;25%;0%" repeatCount="indefinite" />
+			<animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="17s" repeatCount="indefinite"/>
+			</rect>
+			<rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient5)">
+			<animate attributeName="x" dur="23s" values="0%;-25%;0%" repeatCount="indefinite" />
+			<animate attributeName="y" dur="24s" values="25%;-25%;25%" repeatCount="indefinite" />
+			<animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="18s" repeatCount="indefinite"/>
+			</rect>
+			<rect x="0" y="0" width="100%" height="100%" fill="url(#Gradient6)">
+			<animate attributeName="x" dur="25s" values="-25%;0%;-25%" repeatCount="indefinite" />
+			<animate attributeName="y" dur="26s" values="0%;-25%;0%" repeatCount="indefinite" />
+			<animateTransform attributeName="transform" type="rotate" from="360 50 50" to="0 50 50" dur="19s" repeatCount="indefinite"/>
+			</rect>-->
+			<rect x="13.744%" y="1.18473%" width="150%" height="150%" fill="url(#Gradient1)" transform="rotate(334.41 50 50)"><animate attributeName="x" dur="20s" values="25%;0%;25%" repeatCount="indefinite"></animate><animate attributeName="y" dur="21s" values="0%;25%;0%" repeatCount="indefinite"></animate><animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="7s" repeatCount="indefinite"></animateTransform></rect>
+			<rect x="-2.17916%" y="35.4267%" width="150%" height="150%" fill="url(#Gradient2)" transform="rotate(255.072 50 50)"><animate attributeName="x" dur="23s" values="-25%;0%;-25%" repeatCount="indefinite"></animate><animate attributeName="y" dur="24s" values="0%;50%;0%" repeatCount="indefinite"></animate><animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="12s" repeatCount="indefinite"></animateTransform>
+			</rect>
+			<rect x="9.00483%" y="14.5733%" width="150%" height="150%" fill="url(#Gradient6)" transform="rotate(139.903 50 50)"><animate attributeName="x" dur="25s" values="0%;25%;0%" repeatCount="indefinite"></animate><animate attributeName="y" dur="12s" values="0%;25%;0%" repeatCount="indefinite"></animate><animateTransform attributeName="transform" type="rotate" from="360 50 50" to="0 50 50" dur="9s" repeatCount="indefinite"></animateTransform>
+			</rect>
+			</svg>
+		  </div>
+		  <div class="Logo">
+			<!-- header section strats -->
+			<header class="header_section">
+			  <div class="container-fluid">
+				<nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+				  <a class="navbar-brand" href="index.html">
+					<img src="Images/ChromagenLogo.png" alt="Chromagen">
+				  </a>
+				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				  </button>
+		
+				  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+					  <ul class="navbar-nav  ">
+						<li class="nav-item active">
+						  <a class="nav-link" href="#intro">Home <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+						  <a class="nav-link" href="#about">
+							About
+						  </a>
+						</li>
+						<li class="nav-item">
+						  <a class="nav-link" href="#gallery">
+							Gallery
+						  </a>
+						</li>
+						<li class="nav-item">
+						  <a class="nav-link" href="#contact"> Contact Us</a>
+						</li>
+					  </ul>
+					  <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
+						<button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+					  </form>
+					</div>
+				  </div>
+				</nav>
+			  </div>
+			  <div class="rightNav">
+				<input type="text" 
+				name="search" 
+				id="search" 
+				placeholder="Search">
+				<button class="btn btn-sm">Search</button>
 			</div>
-		<div class='content'>
-			<h1 class='h1--scalingSize' data-text='Welcome to Chromagen'>Welcome to Chromagen</h1>
-			<input type='checkbox' id='switch'>
-			<label for='switch'><span>Mspan class='icon>-></span> switch bg</span>
-		</label>
-		</div>
+			</header>
+			<!-- end header section -->
+			<h1 class='h1--scalingSize' data-text='Welcome to Chromagen'> Welcome to Chromagen</h1>
 		</section>
-</body>
-	<div style="background-color: #663399; height:480px; padding-top:60px;">	
-	<div style="background-image: url('ImageLocation'); background-size: cover; height:480px; padding-top:90px;">
-	<img src="Enthenia/Images/ChromagenLogo.png" style="height:150px; border-radius: 50%; border: 5px;" alt="Chromagen Logo">
-</div>
-</div>
-<header>
-<!--Navigation Bar-->
-	<nav class="navbar">
-	<ul class="nav-list">
-		<li><a href="#intro">Home</a></li>
-		<li><a href="#about">About</a></li>
-		<li><a href="#gallery">Gallery</a></li>
-		<li><a href="#contact">Contact</a></li>
-</ul>
-</nav>
-	<div class="rightNav">
-	<input type="text" 
-	name="search" 
-	id="search" 
-	placeholder="Search">
-	<button class="btn btn-sm">Search</button>
-</div>
-</header>
 <!--Intro-->
 <body>
 	<section id="intro">
 	<div class="container">
 	<h2>Introduction:</h2>
-	<br>
-	<article><h4>
+	<p>
  	Chromagen rose from a concept brought about by an interest in traditional media, challenges, and a desire to keep busy. Always striving to do something unique, Chromagen is a site where an independant artist can showcase work and where people interested in traditional media can view and appreciate such methods.</h4>
-</article>
+</p>
 </div>
 </section>
 
+
+<svg class="editorial"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 24 150 28 "
+     preserveAspectRatio="none">
+ <defs>
+ <path id="gentle-wave"
+ d="M-160 44c30 0 
+    58-18 88-18s
+    58 18 88 18 
+    58-18 88-18 
+    58 18 88 18
+    v44h-352z" />
+  </defs>
+  <g class="parallax1">
+   <use xlink:href="#gentle-wave" x="50" y="3" fill="#f461c1"/>
+  </g>
+    <g class="parallax2">
+   <use xlink:href="#gentle-wave" x="50" y="0" fill="#4579e2"/>
+    </g>
+      <g class="parallax3">
+   <use xlink:href="#gentle-wave" x="50" y="9" fill="#3461c1"/>
+   </g>
+    <g class="parallax4">
+   <use xlink:href="#gentle-wave" x="50" y="6" fill="#fff"/>  
+  </g>
+</svg>
+
 <!--About-->
 	<section id="about">
-	<div style="background-color:#c4c3d0 height-200px; border-radius: 30%;">
 	<div class="container">
 		<h2>About Chromagen:</h2>
-		<p>Chromagen is a <i>design source</i> specializing in traditional media including:</p>
+		<p>Chromagen is a design source specializing in traditional media including:</p>
 	<ul>
 		<li> Pen & Ink</li>
 		<li>Watercolor</li>
@@ -77,6 +157,34 @@ href="Enthenia/Images/ChromagenLogo.png">
 </ul>
 </div>
 </section>
+<svg class="editorial"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 24 150 28 "
+     preserveAspectRatio="none">
+ <defs>
+ <path id="gentle-wave"
+ d="M-160 44c30 0 
+    58-18 88-18s
+    58 18 88 18 
+    58-18 88-18 
+    58 18 88 18
+    v44h-352z" />
+  </defs>
+  <g class="parallax1">
+   <use xlink:href="#gentle-wave" x="50" y="3" fill="#f461c1"/>
+  </g>
+    <g class="parallax2">
+   <use xlink:href="#gentle-wave" x="50" y="0" fill="#4579e2"/>
+    </g>
+      <g class="parallax3">
+   <use xlink:href="#gentle-wave" x="50" y="9" fill="#3461c1"/>
+   </g>
+    <g class="parallax4">
+   <use xlink:href="#gentle-wave" x="50" y="6" fill="#fff"/>  
+  </g>
+</svg>
+
 
 <!--Gallery-->
 	<section id="gallery">
@@ -86,6 +194,33 @@ href="Enthenia/Images/ChromagenLogo.png">
 
 </div>
 </section>
+<svg class="editorial"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 24 150 28 "
+     preserveAspectRatio="none">
+ <defs>
+ <path id="gentle-wave"
+ d="M-160 44c30 0 
+    58-18 88-18s
+    58 18 88 18 
+    58-18 88-18 
+    58 18 88 18
+    v44h-352z" />
+  </defs>
+  <g class="parallax1">
+   <use xlink:href="#gentle-wave" x="50" y="3" fill="#f461c1"/>
+  </g>
+    <g class="parallax2">
+   <use xlink:href="#gentle-wave" x="50" y="0" fill="#4579e2"/>
+    </g>
+      <g class="parallax3">
+   <use xlink:href="#gentle-wave" x="50" y="9" fill="#3461c1"/>
+   </g>
+    <g class="parallax4">
+   <use xlink:href="#gentle-wave" x="50" y="6" fill="#fff"/>  
+  </g>
+</svg>
 
 <!--Contact-->
 	<section id="contact">
@@ -96,7 +231,47 @@ href="Enthenia/Images/ChromagenLogo.png">
 		<li>Email</li>
 		<li>Instagram</li>
 		<li>Facebook</li>
+</ul>
+</div>
 </section>
+<p>Or use the form below:</p>
+<div class="form">
+	<form>
+	<input type="text" id="fname" name="firstname" placeholder="Your name..">
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    <input type="text" id="email" name="emial" placeholder="Email address..">
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+<svg class="editorial"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 24 150 28 "
+     preserveAspectRatio="none">
+ <defs>
+ <path id="gentle-wave"
+ d="M-160 44c30 0 
+    58-18 88-18s
+    58 18 88 18 
+    58-18 88-18 
+    58 18 88 18
+    v44h-352z" />
+  </defs>
+  <g class="parallax1">
+   <use xlink:href="#gentle-wave" x="50" y="3" fill="#f461c1"/>
+  </g>
+    <g class="parallax2">
+   <use xlink:href="#gentle-wave" x="50" y="0" fill="#4579e2"/>
+    </g>
+      <g class="parallax3">
+   <use xlink:href="#gentle-wave" x="50" y="9" fill="#3461c1"/>
+   </g>
+    <g class="parallax4">
+   <use xlink:href="#gentle-wave" x="50" y="6" fill="#fff"/>  
+  </g>
+</svg>
+
 <footer>
 	<p> &copy; Copyright 2024 Chromagen Design</p>
 </footer>

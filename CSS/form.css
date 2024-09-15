@@ -1,46 +1,97 @@
-@import
-	url(https://fonts.googleapis.com/css?
-	family=Montserrat:400,700);
-
-body { background:rgb(30,30,40);}
-form {max-width:420px; margin:50px auto; }
-
-.feedback-input { 
-	color:white;
-	font-family: Helvetica, Arial, sans-serif;
-	font-weight:500;
-	font-size: 18px;
-	border-radius: 5px;
-	line-height: 22px;
-	background-color: transparent;
-	border:2px solid #cc6666;
-	padding: 13px;
-	margin-bottom: 15px;
-	width:100%;
-	box-sizing: border-box;
-	outline:0;
+html
+*,
+body {
+  font-family: 'Inconsolata', sans-serif ;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 1.3em;
+  background: linear-gradient( to left, darken( $dark , 1% ) , $dark );
+  color: $bright;
 }
-.feedback-input:focus {border:2px solid #cc4949;}
 
+form {
+  @extend %component;
+}
+
+legend {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  color: $primary;
+}
+
+label {
+  @extend %transition;
+  @extend %corners;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-20%) translateY(50%);
+  background: rgba( $darker , 0.5 );
+  border: 1px solid rgba( $primary , 0.5 );
+  padding: 0 1em 0.2em;
+  display: block;
+  cursor: pointer;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+input,
 textarea {
-	height: 150px;
-	line-height: 150%;
-	resize:vertical;
+  @extend %transition;
+  font-size: 100%;
+
+  &:focus {
+    outline: none;
+    border: 1px solid $primary;
+    background: $darker;
+    box-shadow: inset 3px 3px 10px 0 rgba( black , 0.1);
+  }
+  
+  &:focus,
+  &.active {
+     + label {
+        background: $primary;
+        transform: translateX(-20%) translateY(-50%);
+      } 
+  }
+
+}
+
+::-webkit-input-placeholder { 
+  color: rgba( $primary , 0.3 );
+}
+
+[type="text"],
+[type="email"],
+textarea  {
+  @extend %corners;
+  border: none;
+  background: inherit;
+  color: $bright;
+  border: 1px solid rgba( $primary , 0.3 );
+  padding: 1em 0.5em 0.5em;
+  width: 100%;
+
+  -webkit-filter: blur(5px);
+
+  &:focus,
+  &.active {
+    -webkit-filter: blur(0px);
+  }
+
 }
 
 [type="submit"] {
-	font--family: 'Montserrat', Arial, Helvetica, sans-serif;
-	width: 100%
-	background:#cc666;
-	border-radius:5px;
-	border:0;
-	cursor:pointer;
-	color:white;
-	font-size:24px;
-	padding-top:10px
-	transition: all 0.3s;
-	margin-top:-4px;
-	font-weight:700;
+  @extend %corners;
+  @extend %button;
 }
-[type="submit"]:hover {background:#cc4949
+
+.control {
+  margin-bottom: 1.3em;
+}
+
+.stage {
+  @extend %center-stage;
+  max-width: 500px;
+  width: 80%;
 }

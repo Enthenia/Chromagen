@@ -11,10 +11,8 @@
 		place-content: center;
 		place-items: flex-start center;
 /* Using a <bg-image> and <repeat-style> */
-	background-image: url("https://github.com/Enthenia/Chromagen/blob/main/Images/Subduedbg.jpg");
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
+background: #4d3140 center/cover url("/Images/Subduedbg.jpg") no-repeat;
+	
 /* Global values */
 	background-image: inherit;
 	background-image: initial;

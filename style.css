@@ -11,15 +11,14 @@
 		place-content: center;
 		place-items: flex-start center;
 /* Using a <bg-image> and <repeat-style> */
-		background-image: url('https://github.com/Enthenia/Chromagen/blob/main/Images/Subduedbg.jpg');
-background-repeat: no-repeat;
-background-attachment: fixed;
-background-size: cover;
+	background-image: url("https://github.com/Enthenia/Chromagen/blob/main/Images/Subduedbg.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
 /* Global values */
 	background-image: inherit;
 	background-image: initial;
 	background-image: revert;	
-	background-image: revert-layer;
 	background-image: unset;
 	}
 /*Navigation Bar */
@@ -27,13 +26,13 @@ nav {
 	margin: 27px auto 0;
 	position: relative;
 	width: 590px;
-	height: 50 px;
+	height: 50px;
 	background-color: #34495e;
 	border-radius: 8px;
 	font-size: 0;
 }
 nav a {
-	line-height: 50px
+	line-height: 50px;
 	height: 100%;
 	font-size: 15px;
 	display: inline-block;
@@ -51,7 +50,7 @@ nav .animation {
 	top: 0;
 	z-index: 0;
 	transition: all .5s ease 0s;
-	border-radius: 8pz;
+	border-radius: 8px;
 }
 a:nth-child(1) {
 	width: 100px;
@@ -126,13 +125,13 @@ h1 {
 	font-size: 30px;
 	color: #ecf0f1;
 	text-shadow: 2px 2px 4px #000000;
-	font-family: "Cherry Swash", cursive;
+	font-family: "Cherry Swash", serif;
 }
 
 .container h2{
 	margin-top: 3%;
 	font-size: 3em;
-	font-family: gill sans, sans-serif; font-weight: darken; color:rgb(34, 20, 25);;
+	font-family: "Cherry Swash", serif; font-weight: darken; color:rgb(34, 20, 25);;
 	background-color: #67b3da;
 	text-align: center;
 }

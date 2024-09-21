@@ -3,15 +3,26 @@
 	padding: 0;
 	}
 	
-	body {
-	  font-size: 48px;
-		width: 100cqw;
-		min-height: 100cqh;
-		display: flex;
+	body { 
+  font-family: "Noto Serif", system-ui;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+	font-size: 48px;
+		width: fit-content;
+		min-height: 100vh;
+		display: grid;
 		place-content: center;
 		place-items: flex-start center;
 /* Using a <bg-image> and <repeat-style> */
-		background-image: url('https://github.com/Enthenia/Chromagen/blob/main/Images/Subduedbg.jpg');
+		background-image: url('/Images/Subduedbg.jpg');
 background-repeat: no-repeat;
 background-attachment: fixed;
 background-size: cover;
@@ -19,7 +30,6 @@ background-size: cover;
 	background-image: inherit;
 	background-image: initial;
 	background-image: revert;	
-	background-image: revert-layer;
 	background-image: unset;
 	}
 /*Navigation Bar */
@@ -27,13 +37,14 @@ nav {
 	margin: 27px auto 0;
 	position: relative;
 	width: 590px;
-	height: 50 px;
+	height: 50px;
 	background-color: #34495e;
 	border-radius: 8px;
 	font-size: 0;
+	display: flex;
 }
 nav a {
-	line-height: 50px
+	line-height: 50px;
 	height: 100%;
 	font-size: 15px;
 	display: inline-block;
@@ -51,7 +62,7 @@ nav .animation {
 	top: 0;
 	z-index: 0;
 	transition: all .5s ease 0s;
-	border-radius: 8pz;
+	border-radius: 8px;
 }
 a:nth-child(1) {
 	width: 100px;
@@ -91,7 +102,8 @@ a:nth-child(4):hover ~ .animation {
 }
 .rightNav {
 	text-align: right;
-		}
+	float: right;
+}
 #search {
 	padding: 8px;
 	font-size: 16px;
@@ -118,9 +130,9 @@ a:nth-child(4):hover ~ .animation {
 	justify-content: center;
 	align-items: center;	
 }
-
+.h1
 h1 {
-	text-aligh: center;
+	text-align: center;
 	margin: 40px 0 40px;
 	text-align: center;
 	font-size: 30px;
@@ -129,19 +141,19 @@ h1 {
 	font-family: "Cherry Swash", cursive;
 }
 
-.container h2{
+.about h2{
 	margin-top: 3%;
 	font-size: 3em;
 	font-family: gill sans, sans-serif; font-weight: darken; color:rgb(34, 20, 25);;
-	background-color: #67b3da;
+	background-color: #cafdff;
 	text-align: center;
 }
 			
 .container p, ul{
 	margin-top: 2%;
 	font-size: 1.5em;
-	list-style-type: square;
-	background-color: #495761;
+	list-style-type: horizontal;
+	background-color: #acf8f2;
 	text-align: center;
 }
 .astrodivider {
@@ -217,42 +229,42 @@ h1 {
   border: 1px dashed #c466ff; /* tine 4 of main color */
   color: #9d00ff; /* main color */
 }
-	/* Gallery Wrapper */
 .grid-gallery {
-  --size: 100px;
-  display: grid;
-  grid-template-columns: repeat(6, var(--size));
-  grid-auto-rows: var(--size);
-  gap: 5px;
-  place-items: start center;
-  margin-bottom: var(--size);
-}
-.grid-gallery img {
-  width: calc(var(--size) * 2);
-  height: calc(var(--size) * 2);
-  object-fit: cover;
-  grid-column: auto / span 2;
-  border-radius: 5px;
-  clip-path: path("M90,10 C100,0 100,0 110,10 190,90 190,90 190,90 200,100 200,100 190,110 190,110 110,190 110,190 100,200 100,200 90,190 90,190 10,110 10,110 0,100 0,100 10,90Z"); 
-}
+	--size: 100px;
+	display: grid;
+	grid-template-columns: repeat(6, var(--size));
+	grid-auto-rows: var(--size);
+margin-bottom: var(--size);
+place-items: start center;
+	gap: 5px;
+	}
+& img {
+object-fit: cover;
+width: calc(var(--size) * 2);
+height: calc(var(--size) * 2);
+	object-fit: cover;
+	grid-column: auto / span 2;
+	border-radius: 5px;
+	clip-path: path("M90,10 C100,0 100,0 110,10 190,90 190,90 200,100 200,100 190,110 190,110 110,190 110,190 100,200 100,200 90,190 90,190 10,110 10,110 0,100 0,100 10,90Z"); 
+transition: clip-path 0.25s filter 0.75s;
+grid-column: autp / span 2; 
+border-radius: 5px;
 
-.grid-gallery img:nth-child(5n - 1) { 
-  grid-column: 2 / span 2 
+&:nth-child(5n - a) {
+grid-column: 2 / span 2;
 }
-
-.grid-gallery:has(img:hover) img:not(:hover) {
-  filter: brightness(0.5) contrast(0.5);
-}
-.grid-gallery img {
-  /* ... */
-  transition: clip-path 0.25s, filter 0.75s;
-}
-
-.grid-gallery img:hover {
+&:hover,
+&:focus {
   clip-path: path("M0,0 C0,0 200,0 200,0 200,0 200,100 200,100 200,100 200,200 200,200 200,200 100,200 100,200 100,200 100,200 0,200 0,200 0,100 0,100 0,100 0,100 0,100Z");
-  transition: clip-path 0.25s, filter 0.25s;
-  z-index: 1;
+z-index: 1;
+transition: clip-path 0.25s,. filter 0.25s
 }
+&:focus {
+outline: 1px dashed black;
+outline-offset: -5px
+}
+}
+
 	.social {
 		position: fixed;
 		top: 20px;
@@ -269,7 +281,7 @@ h1 {
 		text-align: right;
 		padding: 10px;
 		border-radiusL 0 30px 30px 0;
-		transition: all is;
+		transition: all 1s;
 	}
 	.social ul li:hover {
 		transform: translate(110px, 0);
@@ -285,7 +297,7 @@ h1 {
 		border-radius: 50%;
 		width: 20px;
 		height: 20px;
-		background: #fffffff;
+		background: #f2d9fd;
 		transform: rotate(0deg);
 	}
 	.social {
@@ -306,7 +318,7 @@ h1 {
 		text-align: right;
 		padding: 10px;
 		border-radiusL 0 30px 30px 0;
-		transition: all is;
+		transition: all 1s;
 	}
 	.social ul li:hover {
 		transform: translate(110px, 0);
@@ -315,14 +327,14 @@ h1 {
 	color: #75aff0;
 	background: rgba(0, 0, 0, 0.36);
 		transform: rotate(360deg);
-	transition: all is;
+	transition: all 1s;
 	}
 	.social ul li i {
 		margin-left: 10px;
 		border-radius: 50%;
 		width: 20px;
 		height: 20px;
-		background: #f57de5;
+		background: #f57de5
 		transform: rotate(0deg);
 	}
 	footer {

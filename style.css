@@ -18,7 +18,7 @@
 	font-size: 48px;
 		width: fit-content;
 		min-height: 100vh;
-		display: flex;
+		display: grid;
 		place-content: center;
 		place-items: flex-start center;
 /* Using a <bg-image> and <repeat-style> */

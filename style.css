@@ -5,8 +5,19 @@ style (1).css
 	padding: 0;
 	}
 	
-	body {
-	  font-size: 48px;
+	body { 
+  font-family: "Noto Serif", system-ui;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+	font-size: 48px;
 		width: fit-content;
 		min-height: fit-content;
 		display: flex;

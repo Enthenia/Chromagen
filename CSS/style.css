@@ -18,17 +18,16 @@ html
 		display: grid;
 		place-content: center;
 		place-items: flex-start center;
-/* Using a <bg-image> and <repeat-style> */
-		background-image: url('/Images/Subduedbg.jpg');
-background-repeat: no-repeat;
-background-attachment: fixed;
-background-size: cover;
-/* Global values */
-	background-image: inherit;
-	background-image: initial;
-	background-image: revert;	
-	background-image: unset;
 	}
+/*Nbackground picture*/
+.spanImage{
+    background-image: url('Images/Subduedbg.jpg');
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
 /*Navigation Bar */
 *{
 	margin: 0;

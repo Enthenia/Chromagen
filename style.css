@@ -225,41 +225,84 @@ h1 {
   color: #9d00ff; /* main color */
 }
 .grid-gallery {
-	--size: 100px;
-	display: grid;
-	grid-template-columns: repeat(6, var(--size));
-	grid-auto-rows: var(--size);
-margin-bottom: var(--size);
-place-items: start center;
-	gap: 5px;
-	}
-& img {
-object-fit: cover;
-width: calc(var(--size) * 2);
-height: calc(var(--size) * 2);
-	object-fit: cover;
-	grid-column: auto / span 2;
-	border-radius: 5px;
-	clip-path: path("M90,10 C100,0 100,0 110,10 190,90 190,90 200,100 200,100 190,110 190,110 110,190 110,190 100,200 100,200 90,190 90,190 10,110 10,110 0,100 0,100 10,90Z"); 
-transition: clip-path 0.25s filter 0.75s;
-grid-column: autp / span 2; 
-border-radius: 5px;
-
-&:nth-child(5n - a) {
-grid-column: 2 / span 2;
-}
-&:hover,
-&:focus {
-  clip-path: path("M0,0 C0,0 200,0 200,0 200,0 200,100 200,100 200,100 200,200 200,200 200,200 100,200 100,200 100,200 100,200 0,200 0,200 0,100 0,100 0,100 0,100 0,100Z");
-z-index: 1;
-transition: clip-path 0.25s,. filter 0.25s
-}
-&:focus {
-outline: 1px dashed black;
-outline-offset: -5px
-}
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 5vw);
+  grid-gap: 1.5rem; 
 }
 
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; 
+}
+
+.gallery__item--1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+
+  /** Alternative Syntax **/
+  /* grid-column: 1 / span 2;  */
+  /* grid-row: 1 / span 2; */
+}
+
+.gallery__item--2 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+
+  /** Alternative Syntax **/
+  /* grid-column: 3 / span 2;  */
+  /* grid-row: 1 / span 2; */
+}
+
+.gallery__item--3 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 6;
+
+  /** Alternative Syntax **/
+  /* grid-column: 5 / span 4;
+  grid-row: 1 / span 5; */
+}
+
+.gallery__item--4 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 6;
+
+  /** Alternative Syntax **/
+  /* grid-column: 1 / span 4;  */
+  /* grid-row: 3 / span 3; */
+}
+
+.gallery__item--5 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 6;
+  grid-row-end: 9;
+
+  /** Alternative Syntax **/
+  /* grid-column: 1 / span 4; */
+  /* grid-row: 6 / span 3; */
+}
+
+.gallery__item--6 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 6;
+  grid-row-end: 9;
+
+  /** Alternative Syntax **/
+  /* grid-column: 5 / span 4; */
+  /* grid-row: 6 / span 3; */
+}
 	.social {
 		position: fixed;
 		top: 20px;

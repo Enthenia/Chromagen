@@ -13,21 +13,10 @@ html, body {
 	font-size: 48px;
 		width: fit-content;
 		min-height: 100vh;
-		display: grid;
-		place-content: center;
-		place-items: flex-start center;
-/* Using a <bg-image> and <repeat-style> */
-		background-image: url("/Images/Subduedbg.jpg");
-background-repeat: repeat;
-background-attachment: fixed;
-background-size: cover;
-/* Global values */
-	background-image: inherit;
-	background-image: initial;
-	background-image: revert;	
-	background-image: unset;*{
-        font-family:'Arial', san serif;
-{
+		display: block;
+		place-content: left;
+		place-items: flex-start left;
+}
         display:grid;
         height:100%;
         width: 100%;

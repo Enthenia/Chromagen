@@ -14,7 +14,7 @@ html, body {
 		width: fit-content;
 		min-height: 100vh;
 		display: block;
-		place-content: left;
+		place-content: start;
 		place-items: flex-start left;
 }
         display:grid;

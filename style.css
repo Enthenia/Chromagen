@@ -208,9 +208,9 @@
 215	  color: #9d00ff; /* main color */
 216	}
 .image-grid {
-	--gap: 16px;
+	--gap: 10px;
 	--num-cols: 4;
-	--row-height: 300px;
+	--row-height: 150px;
 
 	box-sizing: border-box;
 	padding: var(--gap);
@@ -227,11 +227,11 @@
 	object-fit: cover;
 }
 
-.image-grid-col-2 {
-	grid-column: span 2;
+.image-grid-col-4 {
+	grid-column: span 3;
 }
 
-.image-grid-row-2 {
+.image-grid-row-3 {
 	grid-row: span 3;
 }
 
@@ -239,7 +239,7 @@
 @media screen and (max-width: 1024px) {
 	.image-grid {
 		--num-cols: 4;
-		--row-height: 200px;
+		--row-height: 150px;
 	}
 }
   .wrapper{

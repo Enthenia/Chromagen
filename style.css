@@ -294,20 +294,20 @@ h1 {
   /* grid-row: 6 / span 3; */
 }
 .gallery__item--7 {
-    grid-column-start: 5;
+    grid-column-start: 6;
     grid-column-end: 9;
     grid-row-start: 6;
-    grid-row-end: 9;
+    grid-row-end: 7;
   
     /** Alternative Syntax **/
     /* grid-column: 6 / span 4; */
     /* grid-row: 7 / span 3; */
 }
 .gallery__item--8 {
-    grid-column-start: 5;
+    grid-column-start: 4;
     grid-column-end: 9;
     grid-row-start: 6;
-    grid-row-end: 9;
+    grid-row-end: 8;
   
     /** Alternative Syntax **/
     /* grid-column: 5 / span 4; */
@@ -316,7 +316,7 @@ h1 {
 .gallery__item--9 {
     grid-column-start: 5;
     grid-column-end: 9;
-    grid-row-start: 6;
+    grid-row-start: 4;
     grid-row-end: 9;
   
     /** Alternative Syntax **/

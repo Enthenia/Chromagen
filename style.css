@@ -17,12 +17,6 @@
 17	        place-content: start;
 18	        place-items: flex-start left;
 19	}
-20	        display:grid {
-21	        height:100%;
-22	        width: 100%;
-23	        place-items:center;
-24	        background: linear-gradient(315deg, #ffffff, #d7e1ec );
-25	      }
 26	    }
 27	/*Navigation Bar */
 28	nav {

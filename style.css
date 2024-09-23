@@ -10,7 +10,7 @@ html, body {
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
-	font-size: 48px;
+	font-size: 24px;
 		width: fit-content;
 		min-height: 100vh;
 		display: block;
@@ -116,7 +116,7 @@ a:nth-child(4):hover ~ .animation {
 /*Change background color on hover*/
 	color: #b768a2}	
 	section {
-	height: 100vh; background-color: rgb(193, 228, 217);
+	height: 50vh; background-color: rgb(193, 228, 217);
 	border: 1px solid rgb(203, 175, 206);
 	display: flex;
 	justify-content: center;

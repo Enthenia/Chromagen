@@ -51,7 +51,6 @@ th, td {
 	padding-right: 0;
 }
 }
-
 }
 
 //presentational styling
@@ -89,7 +88,6 @@ tr {
 th, td {
 	margin: .5em 1em;
 @media (min-width: $breakpoint-alpha)
-}
 padding: 1em;
 border-style: outset;
 border-color: #96D4D4;

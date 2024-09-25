@@ -35,7 +35,7 @@ th, td {
 @media (min-width: $breakpoint-alpha)
 {
 	display: table-cell;
-	padding: .25em .5em;
+	padding: .25em .7em;
 
 &:first-child {
 	padding-left: 0;
@@ -68,12 +68,12 @@ h1 {
 }
 
 .media-table {
-	background: #34495E;
-	color: #fff;
-	border-radius: .4em;
-	overflow: hidden;
+	background: #aaa4e0;
+color: #fac1ee;
+border-radius: .4em;
+overflow: hidden;
 tr {
-	border-color: lighten(#34495E, 10%);
+	border-color: lighten(#aaa4e0, 10%);
 }
 th, td {
 	margin: .5em 1em;

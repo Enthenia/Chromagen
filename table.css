@@ -16,7 +16,7 @@ td {
 	display: block;
 &:first-child {
 padding-top: .5em;
-padding-right: .6em;	
+padding-right: .8em;	
 }
 
 &:before {

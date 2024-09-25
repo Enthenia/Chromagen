@@ -1,9 +1,9 @@
 @import "compass/css3";
 
-// More practical CSS...
-// using mobile first method (IE8,7 reqiores respond.js polyfill https://github.com/scottjehl/Respond)
+//* More practical CSS...
+//* using mobile first method (IE8,7 reqiores respond.js polyfill https://github.com/scottjehl/Respond)*//
 
-$breakpoint-alpha: 480px; // adjust to your needs
+$breakpoint-alpha: 480px; //* adjust to your needs*//
 
 .media-table {
 	margin: 1em 0;
@@ -33,7 +33,7 @@ border-color: #96D4D4;
 	display: none;
 }
 }
-
+}
 th, td {
 	text-align: left;
 	 border-style: outset;
@@ -53,9 +53,8 @@ th, td {
 }
 }
 
-//presentational styling
-@import 'https://fonts.googleapis.com/css?
-family=Noto:300,400,700';		
+//*presentational styling*//
+@import 'https://fonts.googleapis.com/css?family=Noto:300,400,700';		
 
 body {
 	padding: 0 4em;
@@ -173,7 +172,7 @@ th, td:before {
 	  box-shadow: 0 2px 4px #ba4cff; /* tint 3 of main color */
 	}
 	.astrodivider.neonpurple i {
-	  border: 1px dashed #c466ff; /* tine 4 of main color */
+	  border: 1px dashed #c466ff; /* tint 4 of main color */
 	  color: #9d00ff; /* main color */
 	}
 footer {

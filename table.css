@@ -10,6 +10,7 @@ $breakpoint-alpha: 480px; // adjust to your needs
 	min-width: 300px;
 th { 
 	display: none;
+	border-style: outset;
 }
 
 td {
@@ -17,6 +18,7 @@ td {
 &:first-child {
 padding-top: .4em;
 padding-right: .9em;	
+border-style: outset;
 }
 
 &:before {

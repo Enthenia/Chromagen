@@ -11,6 +11,7 @@ $breakpoint-alpha: 480px; // adjust to your needs
 th { 
 	display: none;
 	border-style: outset;
+	border-color: #96D4D4;
 }
 
 td {
@@ -19,6 +20,7 @@ td {
 padding-top: .4em;
 padding-right: .9em;	
 border-style: outset;
+border-color: #96D4D4;
 }
 
 &:before {
@@ -90,6 +92,7 @@ th, td {
 }
 padding: 1em;
 border-style: outset;
+border-color: #96D4D4;
 }
 }
 th, td:before {

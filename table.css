@@ -66,7 +66,12 @@ body {
 h1 {
 	font-weight: normal;
 	letter-spacing: 01px;
-	color: #34495EE
+	color: #ecf0f1;
+	 text-align: center;
+	margin: 40px 0 40px;
+	font-size: 20px;
+	text-shadow: 2px 2px 4px #000000;
+	font-family: "Cherry Swash", cursive;
 }
 
 .media-table {
@@ -82,20 +87,12 @@ th, td {
 @media (min-width: $breakpoint-alpha)
 }
 padding: 1em;
+border-style: outset;
 }
 }
 th, td:before {
 	color: #dd5;
-}
-.h1
-	h1 {
-	    text-align: center;
-	    margin: 40px 0 40px;
-	    font-size: 20px;
-	    color: #ecf0f1;
-	    text-shadow: 2px 2px 4px #000000;
-	    font-family: "Cherry Swash", cursive;
-	}	            
+}   	            
 	.container p{
 	    margin-top: 2%;
 	    font-size: 1.5em;

@@ -35,7 +35,7 @@ th, td {
 @media (min-width: $breakpoint-alpha)
 {
 	display: table-cell;
-	padding: .25em .7em;
+	padding: .40em .5em;
 
 &:first-child {
 	padding-left: 0;

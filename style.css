@@ -16,8 +16,7 @@
 	        display: block;
 	        place-content: start;
 	        place-items: flex-start left;
-		background-image: url('Images/abstractbg.jpg');
-		background-repeat: no repeat;
+		background: linear-gradient(45deg, #49a09d, #5f2c82);
 	}
 	/*Navigation Bar */
 	nav {

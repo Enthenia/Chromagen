@@ -1,19 +1,9 @@
 @import 'https://fonts.googleapis.com/css?family=Noto:300,400,700';
 
 html,
-
-
-
 body {
 
 	height: 100%;
-
-}
-
-
-
-body {
-
 	margin: 0;
 	background-image: url('Images/abstractbg.jpg');
 	background-repeat: no repeat;
@@ -23,10 +13,6 @@ body {
 	font-weight: 100;
 
 }
-
-
-
-
 
 .container {
 

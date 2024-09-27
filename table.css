@@ -124,7 +124,7 @@ td {
 
 }
 
-}
+}}
 	.astrodivider {
 	  margin: 64px auto;
 	  width: 400px;
@@ -200,7 +200,8 @@ td {
 	}
 footer {
 	        line-height: 40px; 
-	        display: flex;
-	        justify-content: left;
+	         display: block;
+	        place-content: start;
+	        place-items: flex-start left;
 	        font-size: 1em;	    
 }

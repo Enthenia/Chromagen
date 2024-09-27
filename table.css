@@ -5,10 +5,10 @@ body {
 
 	height: 100%;
 	margin: 0;
-	background-image: url('Images/abstractbg.jpg');
-	background-repeat: no repeat;
-	background: linear-gradient(45deg, #49a09d, #5f2c82);
-	background-cover: darken;
+	linear-gradient(45deg, #49a09d, #5f2c82), url('/Images/abstractbg.jpg');
+	background-size: cover;
+	background-position: center;
+	padding: 20px;
 	font-family: serif;
 	font-weight: 100;
 
@@ -32,7 +32,7 @@ table {
 
 	width: 400px;
 
-	border-collapse: collapse;
+	border-collapse: separate;
 
 	overflow: hidden;
 
@@ -201,6 +201,6 @@ td {
 footer {
 	        line-height: 40px; 
 	        display: flex;
-	        justify-content: center;
+	        justify-content: left;
 	        font-size: 1em;	    
 }

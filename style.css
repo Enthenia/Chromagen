@@ -347,7 +347,8 @@
 	    
 	    footer {
 	        line-height: 40px; 
-	        display: flex;
-	        justify-content: center;
+	         display: block;
+	        place-content: start;
+	        place-items: flex-start left;
 	        font-size: 1em;	    
 }

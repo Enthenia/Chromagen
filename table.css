@@ -46,7 +46,7 @@ table {
 	border-collapse: separate;
 margin-left: auto;
 	margin-right: auto;
-	border-spacing: 5px;
+	border-spacing: 8px;
 background: linear-gradient(45deg, #49a09d, #5f2c82);
 	overflow: hidden;
 
@@ -62,9 +62,7 @@ td {
 
 	padding: 15px;
 
-	background-color:
-
-	rgba(255,255,255,0.2);
+	background: linear-gradient(45deg, #49a09d, #5f2c82);
 
 	color: #fff;
 

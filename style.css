@@ -6,18 +6,32 @@
 	  box-sizing: inherit; 
 	}
 	html, body { 
-	  font-family: "Noto Serif", system-ui;
-	  font-style: normal;
-	  font-variation-settings:
-	    "wdth" 100;
-	    font-size: 24px;
-	        width: fit-content;
-	        min-height: 100vh;
-	        display: block;
-	        place-content: start;
-	        place-items: flex-start left;
-		background-image: url('Images/abstractbg.jpg');
-		background-repeat: no repeat;
+	 font-family: "Noto Serif", system-ui;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+font-size: 48px;
+		width: fit-content;
+		min-height: 100vh;
+		display: grid;
+		place-content: center;
+		place-items: flex-start center;
+	}
+/*Nbackground picture*/
+.spanImage{
+    background-image: url('Images/Subduedbg.jpg');
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+	background-image: inherit;
+	background-image: initial;
+	background-image: revert;	
+	background-image: revert-layer;
+	background-image: unset;
 	}
 	/*Navigation Bar */
 	nav {
@@ -154,79 +168,68 @@ button_2 {
     border-radius: 4px;
     cursor: pointer;
 }
-	.astrodivider {
-	  margin: 64px auto;
-	  width: 400px;
-	  max-width: 100%;
-	  position: relative;
-	}
-	.astrodividermask {
-	  overflow: hidden;
-	  height: 20px;
-	}
-	
 	.astrodividermask:after {
-	  content: "";
-	  display: block;
-	  margin: -25px auto 0;
-	  width: 100%;
-	  height: 25px;
-	  border-radius: 125px / 12px;
-	  box-shadow: 0 0 8px #049372;
-	}
-	
-	.astrodivider span {
-	  width: 50px;
-	  height: 50px;
-	  position: absolute;
-	  bottom: 100%;
-	  margin-bottom: -25px;
-	  left: 50%;
-	  margin-left: -25px;
-	  border-radius: 100%;
-	  box-shadow: 0 2px 4px #4fb39c; /* Tint 3 of main color */
-	  background: #fff;
-	}
-	.astrodivider i {
-	  position: absolute;
-	  top: 4px;
-	  bottom: 4px;
-	  left: 4px;
-	  right: 4px;
-	  border-radius: 100%;
-	  border: 1px dashed #68beaa; /* Tint 4 of main color */
-	  text-align: center;
-	  line-height: 40px;
-	  font-style: normal;
-	  color: #049372; /* main color */
-	}
-	
-	/* Purple */
-	
-	.purple .astrodividermask:after {
-	  box-shadow: 0 0 8px #886fac; /* main color */
-	}
-	
-	.astrodivider.purple span {
-	  box-shadow: 0 2px 4px #ab9ac4; /* tint 3 of main color */
-	}
-	.astrodivider.purple i {
-	  border: 1px dashed #b7a8cd; /* tine 4 of main color */
-	  color: #886fac; /* main color */
-	}
-	
-	/* Neon Purple */
-	
-	.neonpurple .astrodividermask:after {
-	  box-shadow: 0 0 8px #9d00ff; /* main color */
-	}
-	.astrodivider.neonpurple span {
-	  box-shadow: 0 2px 4px #ba4cff; /* tint 3 of main color */
-	}
-	.astrodivider.neonpurple i {
-	  border: 1px dashed #c466ff; /* tine 4 of main color */
-	  color: #9d00ff; /* main color */
-	}
+  content: "";
+  display: block;
+  margin: -25px auto 0;
+  width: 100%;
+  height: 25px;
+  border-radius: 125px / 12px;
+  box-shadow: 0 0 8px #049372;
+}
+
+.astrodivider span {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 100%;
+  margin-bottom: -25px;
+  left: 50%;
+  margin-left: -25px;
+  border-radius: 100%;
+  box-shadow: 0 2px 4px #4fb39c; /* Tint 3 of main color */
+  background: #fff;
+}
+.astrodivider i {
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  left: 4px;
+  right: 4px;
+  border-radius: 100%;
+  border: 1px dashed #68beaa; /* Tint 4 of main color */
+  text-align: center;
+  line-height: 40px;
+  font-style: normal;
+  color: #049372; /* main color */
+}
+
+/* Purple */
+
+.purple .astrodividermask:after {
+  box-shadow: 0 0 8px #886fac; /* main color */
+}
+
+.astrodivider.purple span {
+  box-shadow: 0 2px 4px #ab9ac4; /* tint 3 of main color */
+}
+.astrodivider.purple i {
+  border: 1px dashed #b7a8cd; /* tine 4 of main color */
+  color: #886fac; /* main color */
+}
+
+/* Neon Purple */
+
+.neonpurple .astrodividermask:after {
+  box-shadow: 0 0 8px #9d00ff; /* main color */
+}
+.astrodivider.neonpurple span {
+  box-shadow: 0 2px 4px #ba4cff; /* tint 3 of main color */
+}
+.astrodivider.neonpurple i {
+  border: 1px dashed #c466ff; /* tine 4 of main color */
+  color: #9d00ff; /* main color */
+}
 .image-grid {
 	--gap: 10px;
 	--num-cols: 5;
@@ -242,8 +245,8 @@ button_2 {
 }
 
 .image-grid>img {
-	width: 50%;
-	height: 50%;
+	width: 80%;
+	height: 80%;
 	object-fit: cover;
 }
 

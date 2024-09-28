@@ -5,10 +5,10 @@ html,
 
 body {
 
-	margin: 0;
+	height: 100%;
 
-	background-image: linear-gradient(45deg, #49a09d, #5f2c82), url('/Images/abstractbg.jpg');
-
+	margin: 0;	
+	
 	background-size: cover;
 
 	background-position: center;
@@ -24,8 +24,18 @@ body {
 	height: 400px;
 }
 
+.multi-bg {
 
+	width: 100%;
 
+	height: 400px;
+
+	background-image: url('/Images/abstractbg.jpg'), linear-gradient(45deg, #49a09d, #5f2c82);
+
+	background repeat: no-repeat, no-repeat;
+
+	background-position: cover, left;
+}
 .container {
 
 	position: absolute;

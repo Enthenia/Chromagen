@@ -32,7 +32,7 @@ body {
 
 	height: 400px;
 
-	background-image: url('/Images/abstractbg.jpg'), inear-gradient(45deg, #49a09d, #5f2c82);
+	background-image: url('/Images/abstractbg.jpg'), linear-gradient(45deg, #49a09d, #5f2c82);
 
 	background repeat: no-repeat, no-repeat;
 

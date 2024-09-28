@@ -3,46 +3,29 @@
 html,
 
 
-
-body {
-
-	 font-family: "Noto Serif", system-ui;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-font-size: 48px;
-	height: 100%;
+{
 
 	margin: 0;
+
+	
+background-image: linear-gradient(45deg, #49a09d, #5f2c82), url('/Images/abstractbg.jpg');
 
 	background-size: cover;
 
 	background-position: center;
 
 	padding: 20px;
-}
-	/*Nbackground picture*/
-.multi-bg {
 
-	width: 100%;
+	font-family: serif;
+
+	font-weight: 100;
+
+	width: 80%;
 
 	height: 400px;
 
-	background-image: url('/Images/abstractbg.jpg'), linear-gradient(45deg, #49a09d, #5f2c82);
+	
 
-	background repeat: no-repeat, no-repeat;
-
-	background-position: cover, left;
-
-}
-.about h2{
-	margin-top: 3%;
-	font-size: 3em;
-	font-family: gill sans, sans-serif; font-weight: darken; color:rgb(34, 20, 25);;
-	background-color: #cafdff;
-	text-align: center;
 }
 
 
@@ -110,8 +93,6 @@ th {
 	}
 
 }
-
-
 
 tbody {
 

@@ -13,11 +13,11 @@
   font-variation-settings:
     "wdth" 100;
 font-size: 48px;
-		width: fit-content;
-		min-height: 100vh;
-		display: grid;
+		inline-size: fit-content;
+		min-block-size: 100vh;
+		display: inline-flex;
 		place-content: center;
-		place-items: flex-start center;
+		place-items: flex-start left;
 	}
 /*Nbackground picture*/
 .spanImage{

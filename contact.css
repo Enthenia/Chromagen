@@ -7,17 +7,12 @@
 	}
 	html, body { 
 	 font-family: "Noto Serif", system-ui;
-  font-optical-sizing: auto;
-  font-weight: weight;
+  font-weight: lighter;
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
 font-size: 48px;
-		inline-size: fit-content;
-		min-block-size: 100vh;
-		display: inline-flex;
-		place-content: center;
-		place-items: flex-start left;
+place-items: flex-start left;
 	}
 /*Nbackground picture*/
 .spanImage{
@@ -27,12 +22,6 @@ font-size: 48px;
     inline-size: 100%;
     block-size: 100%;
 }
-	background-image: inherit;
-	background-image: initial;
-	background-image: revert;	
-	background-image: revert-layer;
-	background-image: unset;
-
 	/*Navigation Bar */
 	nav {
 	    margin: 27px auto 0;

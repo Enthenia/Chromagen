@@ -125,7 +125,7 @@ font-size: 48px;
 	/*Change background color on hover*/
 	    color: #b768a2}    
 	    section {
-	    block-size: 50vh; background-color: rgb(193, 228, 217);
+	    block-size: 20vh; background-color: rgb(193, 228, 217);
 	    border: 1px solid rgb(203, 175, 206);
 	    display: flex;
 	    justify-content: center;
@@ -160,14 +160,7 @@ font-size: 48px;
 		box-sizing: border-box;
 	}
 	
-	button_2 {
-		background-color: #4caf50;
-		color: white;
-		padding: 10px 15px;
-		border: none;
-		border-radius: 4px;
-		cursor: pointer;
-	}
+	
 		.astrodividermask:after {
 	  content: "";
 	  display: block;

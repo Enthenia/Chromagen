@@ -148,6 +148,53 @@ place-items: flex-start left;
 		margin-block-end: 12px;
 		box-sizing: border-box;
 	}
+button_2:active {
+border: none;
+outline: none;
+}
+
+button_2 a {
+font-family: 'Fredoka One', cursive;
+font-size: 30 px;
+text-decoration: none;
+color: rgba(37, 61, 29, 0.7);
+display: flex;
+justify-content: center;
+align-items: flex-end;
+}
+
+button_2:hover {
+border-radius: 100px 100px 20px 20px;
+height: 45px;
+width: 165px;
+}
+button_2:hover .scale {
+letter-spacing: 5px;
+font-size: 25px;
+transition: 1s;
+}
+
+.rotate-1, .rotate-2, .rotate-3, .rotate-4 { transition: 1s;
+}
+button_2:hover .rotate-1 {
+transform: rotate(15deg);
+}
+button_2:hover .rotate-2 {
+transform: rotate(-15deg);
+}
+button_2:hover .rotate-3 {
+transform: rotate(10deg);
+}
+button_2:hover .rotate-4 {
+transform: rotate(-25deg);
+}
+button_2:hover .rotate-5 {
+transform: rotate(-10deg);
+}
+
+button_2:active {
+filter: hue-rotate(90deg);
+}
 	
 	
 		.astrodividermask:after {

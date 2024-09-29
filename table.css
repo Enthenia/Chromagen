@@ -47,16 +47,20 @@ table {
 margin-left: auto;
 	margin-right: auto;
 	border-spacing: 8px;
-background: linear-gradient(45deg, #49a09d, #5f2c82);
+background-color: linear-gradient(45deg, #49a09d, #5f2c82);
 	overflow: hidden;
 
 	box-shadow: 0 0 20px rgba(0,0,0,0.1);
 
 }
 
+th {
 
+	text-align: left;
 
-th,
+}
+
+thead {
 
 td {
 
@@ -65,28 +69,6 @@ td {
 	background: linear-gradient(45deg, #49a09d, #5f2c82);
 
 	color: #fff;
-
-}
-
-
-
-th {
-
-	text-align: left;
-
-}
-
-
-
-thead {
-
-th {
-
-	background-color: #55608f;
-
-	}
-
-}
 
 tbody {
 
@@ -100,7 +82,6 @@ tr {
 
 	}
 
-}
 }
 
 td {
@@ -132,7 +113,6 @@ td {
 		}
 
 	}
-}
 	.astrodivider {
 	  margin: 64px auto;
 	  width: 400px;

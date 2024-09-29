@@ -21,7 +21,7 @@ font-size: 48px;
 	}
 /*Nbackground picture*/
 .spanImage{
-    background-image: url('Images/Subduedbg.jpg');
+    background-image: url('/Images/abstractbg.jpg');
     background-repeat: no-repeat;
     position: absolute;
     width: 100%;

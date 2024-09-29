@@ -15,9 +15,9 @@
 font-size: 48px;
 		inline-size: fit-content;
 		min-block-size: 100vh;
-		display: grid;
+		display: inline-flex;
 		place-content: center;
-		place-items: flex-start center;
+		place-items: flex-start left;
 	}
 /*Nbackground picture*/
 .spanImage{

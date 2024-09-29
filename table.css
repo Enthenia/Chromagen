@@ -1,37 +1,143 @@
-@import 'https://fonts.googleapis.com/css?family=Noto:300,400,700';
-
-html,
-
-
-body {
-
-	height: 100%;
-background-image: url('./Images/abstractbg.jpg';
-	margin-left: auto
-	margin-right: auto;	
-	
-	background-size: cover;
-
-	background-position: center;
-
-	padding: 21px;
-
-	font-family: serif;
-
-	font-weight: 100;
-
-	width: 80%;
-
-	height: 400px;
+*,
+	*::after,
+	*::before {
+	  margin: 0;
+	  padding: 0;
+	  box-sizing: inherit; 
+	}
+	html, body { 
+	 font-family: "Noto Serif", system-ui;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+font-size: 48px;
+		inline-size: fit-content;
+		min-block-size: 100vh;
+		display: grid;
+		place-content: center;
+		place-items: flex-start center;
+	}
+/*Nbackground picture*/
+.spanImage{
+    background-image: url('./Images/abstractbg.jpg');
+    background-repeat: no-repeat;
+    position: absolute;
+    inline-size: 100%;
+    block-size: 100%;
 }
+	background-image: inherit;
+	background-image: initial;
+	background-image: revert;	
+	background-image: revert-layer;
+	background-image: unset;
 
-.container {
+	/*Navigation Bar */
+	nav {
+	    margin: 27px auto 0;
+	    position: relative;
+	    inline-size: 590px;
+	    block-size: 50px;
+	    background-color: #34495e;
+	    border-radius: 8px;
+	    font-size: 0;
+	    display: flex;
+	}
+	nav a {
+	    line-height: 50px;
+	    block-size: 100%;
+	    font-size: 15px;
+	    display: inline-block;
+	    position: relative;
+	    z-index: 1;
+	    text-decoration: none;
+	    text-transform: uppercase;
+	    text-align: center;
+	    color: white;
+	    cursor: pointer;
+	}
+	nav .animation {
+	    position: absolute;
+	    block-size: 100%;
+	    inset-block-start: 0;
+	    z-index: 0;
+	    transition: all .5s ease 0s;
+	    border-radius: 8px;
+	}
+	a:nth-child(1) {
+	    inline-size: 100px;
+	}
+	a:nth-child(2) {
+	    inline-size: 100px;
+	}
+	a:nth-child(3) {
+	    inline-size: 100px;
+	}
+	a:nth-child(4) {
+	    inline-size: 100px;
+	}
+	nav .start-home,
+	a:nth-child(1):hover ~ .animation {
+	    inline-size: 100px;
+	    inset-inline-start: 0;
+	    background-color: #1abc9c;
+	}
+	nav .start-about,
+	a:nth-child(2):hover ~ .animation {
+	    inline-size: 100px;
+	    inset-inline-start: 100px;
+	    background-color: #e74c3c;
+	}
+	nav .start-gallery,
+	a:nth-child(3):hover ~ .animation {
+	    inline-size: 100px;
+	    inset-inline-start: 210px;
+	    background-color: #3498db;
+	}
+	nav .start-contact,
+	a:nth-child(4):hover ~ .animation {
+	    inline-size: 160px;
+	    inset-inline-start: 310px;
+	    background-color: #9b59b6;
+	}
+	.rightNav {
+	    text-align: end;
+	    float: inline-end;
+	}
+	#search {
+	    padding: 8px;
+	    font-size: 16px;
+	    border: 2px solid #fff;
+	    border-radius: 5px;
+	}
+	.btn {
+	    background-color: #b768a2;
+	    color: #000;
+	    border: none;
+	    padding: 8px 12px;
+	    border-radius: 5px;
+	    cursor: pointer;
+	    transition: background-color 0.3s ease-in-out;
+	}
+	.btn:hover {
+	    background-color: #000;
+	/*Change background color on hover*/
+	    color: #b768a2}    
+	    section {
+	    block-size: 50vh; background-color: rgb(193, 228, 217);
+	    border: 1px solid rgb(203, 175, 206);
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;    
+	}
+..container {
 
 	position: absolute;
 
-	top: 50%;
+	inset-block-start: 50%;
 
-	left: 50%;
+	inset-inline-start: 50%;
 
 	transform: translate(-50%, -50%);
 
@@ -42,33 +148,52 @@ background-image: url('./Images/abstractbg.jpg';
 table {
 
 	position: center;
-	width: 800px;
+	inline-size: 800px;
 	border-collapse: separate;
-margin-left: auto;
-	margin-right: auto;
-	border-spacing: 8px;
-background-color: linear-gradient(45deg, #49a09d, #5f2c82);
+
+	border-spacing: 5px;
+
 	overflow: hidden;
 
 	box-shadow: 0 0 20px rgba(0,0,0,0.1);
 
 }
 
-th {
 
-	text-align: left;
 
-}
-
-thead {
+th,
 
 td {
 
 	padding: 15px;
 
-	background: linear-gradient(45deg, #49a09d, #5f2c82);
+	background-color:
+
+	rgba(255,255,255,0.2);
 
 	color: #fff;
+
+}
+
+
+
+th {
+
+	text-align: start;
+
+}
+
+
+
+thead {
+
+th {
+
+	background-color: #55608f;
+
+	}
+
+}
 
 tbody {
 
@@ -96,13 +221,13 @@ td {
 
 	position: absolute;
 
-	left: 0;
+	inset-inline-start: 0;
 
-	right: 0;
+	inset-inline-end: 0;
 
-	top: -9999px;
+	inset-block-start: -9999px;
 
-	bottom: -9999px;
+	inset-block-end: -9999px;
 
 	background-color: 
 

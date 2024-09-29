@@ -140,27 +140,6 @@ font-size: 48px;
 	    background-color: #acf8f2;
 	    text-align: left;
 	}
-form {
-    display: inline-block;
-    text-align: left;
-    max-width: 400px;
-    margin: 20px auto;
-}
-input {
-    width: 60%;
-    padding: 8px;
-    margin-bottom: 12px;
-    box-sizing: border-box;
-}
-
-button_2 {
-    background-color: #4caf50;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
 	.astrodividermask:after {
   content: "";
   display: block;

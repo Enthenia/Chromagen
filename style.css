@@ -19,7 +19,10 @@ a:nth-child(4):hover~.animation,nav .start-contact { inline-size:160px; inset-in
 section { block-size:60vh; background-color:#c1e4d9; border:1px solid #cbafce; display:flex; justify-content:center; align-items:center } 
 .h1 h1 { text-align:start; margin:40px 0 40px; font-size:40px; color:#e7d9f8; text-shadow:2px 2px 4px #000; font-family:Noto,serif } 
 .h2 h2 { text-align:center; margin:40px 0 40px; font-size:40px; color:#e7d9f8; text-shadow:2px 2px 4px #000; font-family:Noto,serif } 
-.container p,ul { margin-block-start:2%; font-size:1.5em; list-style-type:horizontal; background-color:#19a599; text-align:start } 
+.container p,ul { margin-block-start:2%; font-size:1.5em; list-style-type:horizontal; background-color:#19a599; text-align:start; margin: 0;
+padding: 0;
+list-style-type: none } 
+ul li { display: inline; }
 .astrodividermask:after { content:""; display:block; margin:-25px auto 0; inline-size:100%; block-size:25px; border-radius:125px/12px; box-shadow:0 0 8px #049372 } 
 .astrodivider span { inline-size:50px; block-size:50px; position:absolute; inset-block-end:100%; margin-block-end:-25px; inset-inline-start:50%; margin-inline-start:-25px; border-radius:100%; box-shadow:0 2px 4px #4fb39c; background:#fff } 
 .astrodivider i { position:absolute; inset-block-start:4px; inset-block-end:4px; inset-inline-start:4px; inset-inline-end:4px; border-radius:100%; border:1px dashed #68beaa; text-align:center; line-height:40px; font-style:normal; color:#049372 } 

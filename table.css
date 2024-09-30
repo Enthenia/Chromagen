@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Noto:300,400,700);body,html { block-size:100%; margin:0; background-size:cover; background-position:center; padding:20px; font-family:serif; font-weight:100; inline-size:80%; block-size:400px } 
 .container { position:absolute; inset-block-start:50%; inset-inline-start:50%; transform:translate(-50%,-50%) } 
-table { position:center; inline-size:800px; border-collapse:separate; border-spacing:5px; overflow:hidden; box-shadow:0 0 20px rgba(0,0,0,.1) } 
+table { position:fixed; inline-size:800px; border-collapse:separate; border-spacing:5px; overflow:hidden; box-shadow:0 0 20px rgba(0,0,0,.1) } 
 td,th { padding:15px; background-color:rgba(255,255,255,.2); color:#fff } 
 th { text-align:start } 
 td { position:relative; inline-size:400px; max-inline-size:100%; position:relative } 

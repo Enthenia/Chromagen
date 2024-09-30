@@ -18,7 +18,7 @@ a:nth-child(4):hover~.animation,nav .start-contact{inline-size:160px;inset-inlin
 .btn:hover{background-color:#000;color:#75f575}
 section{block-size:60vh;background-color:#c1e4d9;border:1px solid #cbafce;display:flex;justify-content:center;align-items:center}
 .h1 h1{text-align:center;margin:40px 0 40px;font-size:20px;color:#ecf0f1;text-shadow:2px 2px 4px #000;font-family:"Noto",serif}
-.container p,ul{margin-block-start:2%;font-size:1.5em;list-style-type:horizontal;background-color:#acf8f2;text-align:center}
+.container p,menu{margin-block-start:2%;font-size:1.5em;list-style-type:horizontal;background-color:#acf8f2;text-align:center}
 form{display:inline-block;text-align:start;max-inline-size:400px;margin:20px auto}
 input{inline-size:60%;padding:8px;margin-block-end:12px;box-sizing:border-box}
 button2{background-color:#4caf50;color:#fff;padding:10px 15px;border:none;border-radius:4px;cursor:pointer}

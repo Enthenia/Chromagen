@@ -22,7 +22,7 @@ section { block-size:60vh; background-color:#c1e4d9; border:1px solid #cbafce; d
 .container p,ul { margin-block-start:2%; font-size:1.5em; list-style-type:horizontal; background-color:#19a599; text-align:start; margin: 0;
 padding: 0;
 list-style-type: none } 
-ul li { display: inline; }
+menu li { display: inline; }
 .container { position:absolute; inset-block-start:50%; inset-inline-start:50%; transform:translate(-50%,-50%) } 
 table { position:fixed; inline-size:800px; border-collapse:separate; border-spacing:5px; overflow:hidden; box-shadow:0 0 20px rgba(0,0,0,.1) } 
 td,th { padding:15px; background-color:rgba(255,255,255,.2); color:#fff } 

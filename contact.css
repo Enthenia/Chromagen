@@ -1,9 +1,9 @@
-*,::after,::before{margin:0;padding:0;box-sizing:inherit}
-body,html{font-family:"Noto Serif",system-ui;font-weight:lighter;font-style:normal;font-size:48px;inline-size:fit-content;min-block-size:100vh;display:grid;place-content:center;place-items:flex-start center}
-.spanImage{background-image:url(./Images/abstractbg.jpg);background-repeat:no-repeat;position:absolute;inline-size:100%;block-size:100%}
-nav{margin:27px auto 0;position:relative;inline-size:590px;block-size:50px;background-color:#34495e;border-radius:8px;font-size:0;display:flex}
-nav a{line-height:50px;block-size:100%;font-size:15px;display:inline-block;position:relative;z-index:1;text-decoration:none;text-transform:uppercase;text-align:center;color:#fff;cursor:pointer}
-nav .animation{position:absolute;block-size:100%;inset-block-start:0;z-index:0;transition:all .5s ease 0s;border-radius:8px}
+*,::after,::before { margin:0; padding:0; box-sizing:inherit } 
+body,html { font-family:"Noto Serif",system-ui; font-weight:lighter; font-style:normal; font-variation-settings:"wdth"100; font-size:48px; inline-size:fit-content; min-block-size:100vh; display:inline-flex; place-content:center; place-items:flex-start left } 
+.spanImage { background-image:url(.Images/abstractbg.jpg); background-repeat:no-repeat; position:absolute; inline-size:100%; block-size:100% } 
+nav { margin:27px auto 0; position:relative; inline-size:590px; block-size:50px; background-color:#34495e; border-radius:8px; font-size:0; display:flex } 
+nav a { line-height:50px; block-size:100%; font-size:15px; display:inline-block; position:relative; z-index:1; text-decoration:none; text-transform:uppercase; text-align:center; color:#fff; cursor:pointer } 
+nav .animation { position:absolute; block-size:100%; inset-block-start:0; z-index:0; transition:all .5s ease 0s; border-radius:8px } 
 a:nth-child(1){inline-size:100px}
 a:nth-child(2){inline-size:100px}
 a:nth-child(3){inline-size:100px}
@@ -16,12 +16,12 @@ a:nth-child(4):hover~.animation,nav .start-contact{inline-size:160px;inset-inlin
 #search{padding:8px;font-size:16px;border:2px solid #fff;border-radius:5px}
 .btn{background-color:#b768a2;color:#000;border:none;padding:8px 12px;border-radius:5px;cursor:pointer;transition:background-color .3s ease-in-out}
 .btn:hover{background-color:#000;color:#75f575}
-section{block-size:50vh;background-color:#c1e4d9;border:1px solid #cbafce;display:flex;justify-content:center;align-items:center}
-.h1 h1{text-align:center;margin:40px 0 40px;font-size:20px;color:#ecf0f1;text-shadow:2px 2px 4px #000;font-family:"Cherry Swash",cursive}
+section{block-size:60vh;background-color:#c1e4d9;border:1px solid #cbafce;display:flex;justify-content:center;align-items:center}
+.h1 h1{text-align:center;margin:40px 0 40px;font-size:20px;color:#ecf0f1;text-shadow:2px 2px 4px #000;font-family:"Noto",serif}
 .container p,ul{margin-block-start:2%;font-size:1.5em;list-style-type:horizontal;background-color:#acf8f2;text-align:center}
 form{display:inline-block;text-align:start;max-inline-size:400px;margin:20px auto}
 input{inline-size:60%;padding:8px;margin-block-end:12px;box-sizing:border-box}
-button_2{background-color:#4caf50;color:#fff;padding:10px 15px;border:none;border-radius:4px;cursor:pointer}
+button2{background-color:#4caf50;color:#fff;padding:10px 15px;border:none;border-radius:4px;cursor:pointer}
 .astrodividermask:after{content:"";display:block;margin:-25px auto 0;inline-size:100%;block-size:25px;border-radius:125px/12px;box-shadow:0 0 8px #049372}
 .astrodivider span{inline-size:50px;block-size:50px;position:absolute;inset-block-end:100%;margin-block-end:-25px;inset-inline-start:50%;margin-inline-start:-25px;border-radius:100%;box-shadow:0 2px 4px #4fb39c;background:#fff}
 .astrodivider i{position:absolute;inset-block-start:4px;inset-block-end:4px;inset-inline-start:4px;inset-inline-end:4px;border-radius:100%;border:1px dashed #68beaa;text-align:center;line-height:40px;font-style:normal;color:#049372}
@@ -44,3 +44,4 @@ button_2{background-color:#4caf50;color:#fff;padding:10px 15px;border:none;borde
 .wrapper .instagram:hover .tooltip,.wrapper .instagram:hover .tooltip:before,.wrapper .instagram:hover span{background:#46c1f6}
 .wrapper .github:hover .tooltip,.wrapper .github:hover .tooltip:before,.wrapper .github:hover span{background:#333}
 .wrapper .email:hover .tooltip,.wrapper .email:hover .tooltip:before,.wrapper .email:hover span{background:#7e26b9}
+footer { line-height:40px; display:block; place-content:start; place-items:flex-start left; font-size:1em } 

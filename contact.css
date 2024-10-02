@@ -140,8 +140,8 @@ section {
   border: 1px solid #cbafce;
   display: flex;
   inline-size: fit-content;
-  justify-content: center;
-  align-items: center
+  justify-content: space-evenly;
+  align-items: start;
 }
 
 .h1 h1 {

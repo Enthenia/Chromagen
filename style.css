@@ -126,9 +126,10 @@ nav .start-contact {
   color: #75f575
 }
 
+
 section {
   block-size: 50vh;
-  background-color: #c1e4d9;
+  background-color: linear-gradient(rgb(18, 236, 207));
   border: 1px solid #cbafce;
   display: flex;
   inline-size: fit-content;

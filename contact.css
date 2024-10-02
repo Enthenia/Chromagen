@@ -25,7 +25,7 @@ spanImage {
   background-image: url(.Images/abstractbg.jpg);
   background-repeat: no-repeat;
   position: absolute;
-  inline-size: 100%;
+  inline-size: 50%;
   block-size: 100%
 }
 
@@ -139,6 +139,7 @@ section {
   background-color: #c1e4d9;
   border: 1px solid #cbafce;
   display: flex;
+  inline-size: fit-content;
   justify-content: center;
   align-items: center
 }

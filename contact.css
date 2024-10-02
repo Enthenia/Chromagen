@@ -21,7 +21,7 @@ html {
   place-items: flex-start center
 }
 
-.spanImage {
+spanImage {
   background-image: url(.Images/abstractbg.jpg);
   background-repeat: no-repeat;
   position: absolute;
@@ -175,7 +175,7 @@ input {
   box-sizing: border-box
 }
 
-#button {
+#subbutton {
   inline-size: 150px;
   block-size: 50px;
   border-radius: 180px;

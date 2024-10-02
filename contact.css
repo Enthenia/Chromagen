@@ -1,6 +1,6 @@
 *,::after,::before { margin:0; padding:0; box-sizing:inherit } 
 body,html { font-family:"Noto Serif",system-ui; font-optical-sizing:auto; font-weight:weight; font-style:normal; font-variation-settings:wdth 100; font-size:48px; inline-size:fit-content; min-block-size:100vh; display:grid; place-content:center; place-items:flex-start center } 
-.spanImage { background-image:url(Images/abstractbg.jpg); background-repeat:no-repeat; position:absolute; inline-size:100%; block-size:100% } 
+.spanImage { background-image:url(.Images/abstractbg.jpg); background-repeat:no-repeat; position:absolute; inline-size:100%; block-size:100% } 
 nav { margin:27px auto 0; position:relative; inline-size:590px; block-size:50px; background-color:#34495e; border-radius:8px; font-size:0; display:flex } 
 nav a { line-height:60px; block-size:100%; font-size:15px; display:inline-block; position:relative; z-index:1; text-decoration:none; text-transform:uppercase; text-align:center; color:#fff; cursor:pointer } 
 nav .animation { position:absolute; block-size:100%; inset-block-start:0; z-index:0; transition:all .5s ease 0s; border-radius:8px } 

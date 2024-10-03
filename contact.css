@@ -22,12 +22,11 @@ html {
 }
 
 spanImage {
-  background-image: url(Images/abstractbg.jpg);
+  background-image: url(.Images/abstractbg.jpg);
   background-repeat: no-repeat;
   position: absolute;
   inline-size: 50%;
   block-size: 100%
-  display: inline-block;
 }
 
 nav {
@@ -135,14 +134,14 @@ nav .start-contact {
   color: #75f575
 }
 
+}
 section {
-  block-size: 50vh;
-  background-color: linear-gradient(rgb(18, 236, 207));
-  border: 1px solid #cbafce;
-  display: flex;
-  inline-size: fit-content;
-  justify-content: space-evenly;
-  align-items: start;
+	block-size: 60vh;
+	background-color: #c1e4d9;
+	border: 1px solid #cbafce;
+	display: flex;
+	justify-content: center;
+	align-items: center
 }
 
 .h1 h1 {

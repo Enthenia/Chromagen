@@ -22,11 +22,12 @@ html {
 }
 
 spanImage {
-  background-image: url(.Images/abstractbg.jpg);
+  background-image: url(Images/abstractbg.jpg);
   background-repeat: no-repeat;
   position: absolute;
   inline-size: 50%;
   block-size: 100%
+  display: inline-block;
 }
 
 nav {

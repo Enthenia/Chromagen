@@ -14,13 +14,13 @@ body, html {
 	display: inline-flex;
 	place-content: space-around start;
 }
-.spanImage {
-	background-image: url(Images/abstractbg.jpg);
-	background-origin: border-box;
-	background-repeat: no-repeat;
-	position: absolute;
-	inline-size: 100%;
-	block-size: 100%
+spanImage {
+  background-image: url(Images/abstractbg.jpg);
+  background-repeat: no-repeat;
+  position: absolute;
+  inline-size: 50%;
+  block-size: 100%
+  display: inline-block;
 }
 nav {
 	margin: 27px auto 0;

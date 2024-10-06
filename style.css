@@ -129,4 +129,66 @@ line-height: 40px;
     color: rgb(58, 166, 216);
     padding: 20px;
     }
+    .astrodividermask:after {
+        content: "";
+        display: block;
+        margin: -25px auto 0;
+        inline-size: 100%;
+        block-size: 25px;
+        border-radius: 125px/12px;
+        box-shadow: 0 0 8px #049372
+    }
+    
+    .astrodivider span {
+        inline-size: 50px;
+        block-size: 50px;
+        position: absolute;
+        inset-block-end: 100%;
+        margin-block-end: -25px;
+        inset-inline-start: 50%;
+        margin-inline-start: -25px;
+        border-radius: 100%;
+        box-shadow: 0 2px 4px #4fb39c;
+        background: #fff
+    }
+    
+    .astrodivider i {
+        position: absolute;
+        inset-block-start: 4px;
+        inset-block-end: 4px;
+        inset-inline-start: 4px;
+        inset-inline-end: 4px;
+        border-radius: 100%;
+        border: 1px dashed #68beaa;
+        text-align: center;
+        line-height: 40px;
+        font-style: normal;
+        color: #049372
+    }
+    
+    .purple .astrodividermask:after {
+        box-shadow: 0 0 8px #886fac
+    }
+    
+    .astrodivider.purple span {
+        box-shadow: 0 2px 4px #ab9ac4
+    }
+    
+    .astrodivider.purple i {
+        border: 1px dashed #b7a8cd;
+        color: #886fac
+    }
+    
+    .neonpurple .astrodividermask:after {
+        box-shadow: 0 0 8px #9d00ff
+    }
+    
+    .astrodivider.neonpurple span {
+        box-shadow: 0 2px 4px #ba4cff
+    }
+    
+    .astrodivider.neonpurple i {
+        border: 1px dashed #c466ff;
+        color: #9d00ff
+    }
   }

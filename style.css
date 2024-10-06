@@ -191,4 +191,90 @@ line-height: 40px;
         border: 1px dashed #c466ff;
         color: #9d00ff
     }
+    .wrapper {
+        display: inline-flex
+    }
+    
+    .wrapper .icon {
+        margin: 0 20px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        z-index: 2
+    }
+    
+    .wrapper .icon span {
+        position: relative;
+        z-index: 2;
+        block-size: 60px;
+        inline-size: 60px;
+        display: block;
+        background: #fff;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+        border-radius: 50%;
+        text-align: center;
+        transition: all .4s cubic-bezier(.68, -.55, .265, 1.55)
+    }
+    
+    .wrapper .icon span i {
+        font-size: 25px;
+        line-height: 60px
+    }
+    
+    .wrapper .icon .tooltip {
+        position: absolute;
+        inset-block-start: 0;
+        background: linear-gradient rgba(250, 420, 0, .2);
+        box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+        font-size: 20px;
+        padding: 10px 18px;
+        border-radius: 25px;
+        color: #fff;
+        opacity: 0;
+        pointer-events: none;
+        transition: all .4s cubic-bezier(.68, -.55, .265, 1.55)
+    }
+    
+    .wrapper .icon:hover .tooltip {
+        opacity: 1;
+        pointer-events: auto;
+        inset-block-start: -70px
+    }
+    
+    .wrapper .icon .tooltip:before {
+        position: absolute;
+        content: "";
+        block-size: 15px;
+        inline-size: 15px;
+        inset-block-end: -8px;
+        inset-inline-start: 50%;
+        transform: translateX(-50%) rotate(45deg)
+    }
+    
+    .wrapper .icon:hover .tooltip, .wrapper .icon:hover span {
+        text-shadow: 0 -1px 0 rgba(0, 0, 0, .4)
+    }
+    
+    .wrapper .icon:hover span {
+        color: #fff
+    }
+    
+    .wrapper .facebook:hover .tooltip, .wrapper .facebook:hover .tooltip:before, .wrapper .facebook:hover span {
+        background: #3b5999
+    }
+    
+    .wrapper .instagram:hover .tooltip, .wrapper .instagram:hover .tooltip:before, .wrapper .instagram:hover span {
+        background: #46c1f6
+    }
+    
+    .wrapper .github:hover .tooltip, .wrapper .github:hover .tooltip:before, .wrapper .github:hover span {
+        background: #333
+    }
+    
+    .wrapper .email:hover .tooltip, .wrapper .email:hover .tooltip:before, .wrapper .email:hover span {
+        background: #7e26b9
+    }
   }

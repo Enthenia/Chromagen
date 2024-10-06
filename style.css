@@ -37,6 +37,193 @@
     place-content: center;
     place-items: flex-start left
     }
+    nav {
+
+	margin: 27px auto 0;
+
+	position: sticky;
+
+	inline-size: 590px;
+
+	block-size: 50px;
+
+	background-color: #34495e;
+
+	border-radius: 8px;
+
+	font-size: 0;
+
+	display: flex;
+
+	justify-content: space-between
+
+}
+
+nav a {
+
+	line-height: 50px;
+
+	block-size: 100%;
+
+	font-size: 15px;
+
+	display: inline-block;
+
+	position: sticky;
+
+	z-index: 1;
+
+	text-decoration: none;
+
+	text-transform: uppercase;
+
+	text-align: center;
+
+	color: #fff;
+
+	cursor: pointer
+
+}
+
+nav .animation {
+
+	position: sticky;
+
+	block-size: 100%;
+
+	inset-block-start: 0;
+
+	z-index: 0;
+
+	transition: all .5s ease 0s;
+
+	border-radius: 8px
+
+}
+
+a:nth-child(1) {
+
+	inline-size: 100px
+
+}
+
+a:nth-child(2) {
+
+	inline-size: 100px
+
+}
+
+a:nth-child(3) {
+
+	inline-size: 100px
+
+}
+
+a:nth-child(4) {
+
+	inline-size: 100px
+
+}
+
+a:nth-child(1):hover~.animation, nav .start-home {
+
+	inline-size: 100px;
+
+	inset-inline-start: 0;
+
+	background-color: #1abc9c
+
+}
+
+a:nth-child(2):hover~.animation, nav .start-about {
+
+	inline-size: 100px;
+
+	inset-inline-start: 100px;
+
+	background-color: #e74c3c
+
+}
+
+a:nth-child(3):hover~.animation, nav .start-gallery {
+
+	inline-size: 100px;
+
+	inset-inline-start: 210px;
+
+	background-color: #3498db
+
+}
+
+a:nth-child(4):hover~.animation, nav .start-contact {
+
+	inline-size: 160px;
+
+	inset-inline-start: 310px;
+
+	background-color: #9b59b6
+
+}
+
+.rightNav {
+
+	text-align: end;
+
+	float: inline-end
+
+}
+
+#search {
+
+	padding: 8px;
+
+	font-size: 16px;
+
+	border: 2px solid #fff;
+
+	border-radius: 5px
+
+}
+
+.button {
+    margin: 10%;
+    text-align: center;
+}
+.btn-hover {
+    inline-size: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    block-size: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+.btn-hover.color-1 {
+    background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
     .sidebar {
       grid-area: sidebar;
       grid-column: col-start 11 / span 2;

@@ -32,6 +32,7 @@
 background-image: linear-gradient(black, white);
 background-image: url("Images/background1.jpg");
 background-size: cover;
+background-repeat: no-repeat;
   font-family: "Noto Serif", system-ui;
   font-weight: lighter;
   font-style: normal;
@@ -171,7 +172,7 @@ background-size: cover;
         "footer footer footer";
     }
 
-    @media only screen and (min-inline-size: 500px) {
+    @media only screen and (min-inline-size: 250px) {
       .wrapper {
 
         grid-template-columns: 20% auto;
@@ -184,15 +185,15 @@ background-size: cover;
           "footer footer footer";
       }
 
-      @media only screen and (min-inline-size: 600px) {
+      @media only screen and (min-inline-size: 300px) {
         .wrapper {
           grid-gap: 20px;
-          grid-template-columns: 120px auto 120px;
+          grid-template-columns: 100px auto 100px;
           grid-template-areas:
             "header  header  header"
             "sidebar main rightside"
             "footer  footer  footer";
-          max-inline-size: 600px;
+          max-inline-size: 300px;
         }
       }
     }

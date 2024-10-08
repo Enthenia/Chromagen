@@ -27,8 +27,9 @@
 }
 
 .header {
-  grid-area: header;
-  background-image: url(Images/background1.jpg);
+   /* single image */
+background-image: linear-gradient(black, white);
+background-image: url("Images/background1.jpg");
   font-family: "Noto Serif", system-ui;
   font-weight: lighter;
   font-style: normal;

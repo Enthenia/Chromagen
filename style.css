@@ -13,7 +13,7 @@
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
@@ -27,9 +27,11 @@
 }
 
 .header {
-   /* single image */
+  grid-area: header;
+  /* single image */
 background-image: linear-gradient(black, white);
 background-image: url("Images/background1.jpg");
+background-size: cover;
   font-family: "Noto Serif", system-ui;
   font-weight: lighter;
   font-style: normal;

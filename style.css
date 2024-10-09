@@ -1,4 +1,3 @@
-
 *,
 
 ::after,
@@ -17,6 +16,10 @@
   grid-template-columns: 0.5fr 1.5fr 0.5fr;
   grid-template-rows: 1fr 3.5fr 1fr;
   gap: 0px 3px;
+  background-image: linear-gradient(rgb(19, 14, 14), rgb(187, 168, 168));
+  background-image: url("Images/background1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   grid-template-areas:
     "header header header"
     "sidebar main rightside"
@@ -31,10 +34,11 @@
   background-size: cover;
   background-repeat: no-repeat;
   font-family: "Noto Serif", system-ui;
-  font-weight: normal;
+  font-weight: lighter;
   font-style: normal;
-  font-variation-settings: "wdth"100;
-  font-size: 48px;
+  font-variation-settings: 'wdth'100;
+  font-variation-settings: 'wght'50;
+  font-size: large;
   inline-size: fit-content;
   min-block-size: 100vh;
   display: inline-flex;
@@ -43,12 +47,11 @@
 }
 
 .topintro h1 {
+  grid-area: header;
+  font-size: larger;
 
-  font-size: 70px;
-
-  font-weight: 600;
-
-
+  font-weight: 400;
+padding-inline-end: 1em;
   color: transparent;
 
   background-clip: text;
@@ -92,8 +95,32 @@
   padding: 20px;
 }
 
+.intro {
+  grid-area: main;
+  /* single image */
+  background-image: linear-gradient(rgb(19, 14, 14), rgb(187, 168, 168));
+  background-image: url("Images/background1.jpg");
+  background-size: 30%;
+  background-repeat: no-repeat;
+  font-family: "Noto Serif", system-ui;
+  font-weight: bold;
+  font-style: normal;
+  font-variation-settings: 'wdth'100;
+  font-variation-settings: 'wght'60;
+  font-size: relative-size;
+  inline-size: auto;
+writing-mode: horizontal-tb;
+ min-block-size: 20px;
+  display: flow-root;
+  place-content: align-items;
+  place-items: flex-start left;
+}
+
 .footer {
   grid-area: footer;
+  background-image: url("Images/background1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   line-height: 40px;
   display: block;
   place-content: start;
@@ -171,6 +198,8 @@
   background-repeat: no-repeat;
   position: relative;
   top: auto;
+  flex-direction: column;
+  flex-wrap: stretch;
   inline-size: 100%;
   block-size: 100%;
   display: -webkit-inline-box;
@@ -190,18 +219,20 @@ ul {
 
 li a {
   display: block;
-padding: 8px 16px;
+  padding: 8px 16px;
   text-decoration: none;
 }
 
 .rightside {
   grid-area: rightside;
   block-size: 60vh;
-  background-color: #c1e4d9;
-  border: 1px solid #25022a;
-  display: block;
-  flex-direction: row;
-  flex-wrap: wrap-reverse;
+  background-image: linear-gradient rgb(2, 0, 36);
+  background-image: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(84, 9, 121, 1) 44%, rgba(0, 212, 255, 1) 100%);
+  background-repeat: no-repeat;
+  position: relative;
+  top: auto;
+  flex-direction: column;
+  flex-wrap: stretch;
   justify-content: right;
   align-items: right;
   order: 0;
@@ -224,6 +255,7 @@ padding: 8px 16px;
   place-content: left;
   place-items: flex-start left;
 }
+
 .main h2 {
 
   font-size: 70px;
